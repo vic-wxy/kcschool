@@ -45,7 +45,7 @@ a{ cursor: pointer; outline: none;}
 }
 /*添加一张背景*/
 .top-bg{
-    background-image: url('../img/top_bg.jpg');
+    background-image: "https://s1.ax1x.com/2020/06/30/NI0K8f.png";
     background-size: contain;
     background-repeat: repeat-x;
 }
