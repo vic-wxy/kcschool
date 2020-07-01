@@ -23,12 +23,12 @@ a{ cursor: pointer; outline: none;}
 }
 
 .carousel-indicators-1 li{
-    width: 18px;
-    height: 14px;
+    width: 3%;
+    height: 14;
     cursor: pointer;
     border-radius: 5px;
     background-color: #ebedee;
-    margin: 5px 1px;
+    margin: -18px 1px;
     background-color: #ebedee;
     opacity: .9;
 }
@@ -36,10 +36,12 @@ a{ cursor: pointer; outline: none;}
     margin-left: 10px;
 }
 .carousel-indicators .active{
-	width: 18px;
-    height: 14px;
+	width: 3%;
+    height: 14;
+	cursor: pointer;
     border-radius: 5px;
-    margin: 5px 1px;
+	background-color: #e08a22;
+    margin: -18px 1px;
     background-color: #e08a22;
     opacity: .9;
 }
