@@ -154,7 +154,9 @@ table tbody{
     text-align: center;
     color: #eee;
 }
-#footer a{ color: #eee; }
+#footer p{ color: #eee; }
+#footer a{ color: #00aaff; }
+#footerred p{ font-size: 15px; color: #ff0000; }
 
 #abcdd{
 	/* height: 850px; */
