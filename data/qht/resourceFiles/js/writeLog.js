@@ -1,7 +1,7 @@
 function setLogTarget(target){
   // https://book.yunzhan365.com/serm  (user_id) /doyf  (item_id) /mobile/index.html
-  // https://www.yunzhan365.com/check/yhvx/rkjw/mobile/index.html?from=singlemessage&isappinstalled=0  ==>忽略
-  // https://www.yunzhan365.com/view/yhvx   (user_id) /rkjw  (item_id) /mobile/index.html?from=singlemessage&isappinstalled=0
+  // https://vic-wxy.github.io/check/yhvx/rkjw/mobile/index.html?from=singlemessage&isappinstalled=0  ==>忽略
+  // https://vic-wxy.github.io/view/yhvx   (user_id) /rkjw  (item_id) /mobile/index.html?from=singlemessage&isappinstalled=0
   // https://worldmimi.sharedbook.cn/books/yxoz  (item_id) /mobile/index.html?maxwidthtosmallmode=0&maxheighttosmallmode=0
   // ***.worldmimi.sharedbook.cn/books/getuserinfo.js--->uLink
   // ***.yunzhan365.com/books/getuserinfo.js
@@ -15,9 +15,9 @@ function setLogTarget(target){
   var pathName = window.location.pathname;
   target.item_type = "Book";
 
-  if(host.match('www.yunzhan365.com')){
+  if(host.match('vic-wxy.github.io')){
 
-    if(host.match('www.yunzhan365.com/check')) return;
+    if(host.match('vic-wxy.github.io/check')) return;
     startIndex = pathName.indexOf('/',1) + 1;
     divideIndex1 = pathName.indexOf('/',startIndex);
     divideIndex2 = pathName.indexOf('/',divideIndex1+1);
