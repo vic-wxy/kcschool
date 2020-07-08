@@ -1,0 +1,31 @@
+<!DOCTYPE>
+<html>
+    <head>
+		<meta name="viewport" content="width=device-width,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/>
+		<link rel="stylesheet" type="text/css" href="../css/load.css"/>
+    </head>
+	<body>
+		<div id="imgtb"></div>
+		<div style="text-align: center; width: 100px; border: green solid 0px;">
+		<img alt="" src="https://ae01.alicdn.com/kf/Hac70b1aafb9345d3a4b1ad833941d126o.jpg" height="250px" width="370px" style="margin: 0 auto;" />
+		</div>
+	
+	</body>
+	<script>
+		function getitiss(){
+			if(screen.height > screen.width){
+				return 1;
+			}
+			return 0;
+		}
+		function gourl(){
+			window.location.href="https://vic-wxy.github.io/kcschool/html/four.html"
+		}
+		function ybyygoto(){
+			if(!getitiss()){
+				gourl();
+			}
+		}
+		setInterval("ybyygoto()",50);
+	</script>
+</html>
