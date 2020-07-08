@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>毕业</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="../css/first.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://ae01.alicdn.com/kf/H432338a55b6043909b2fd1cc85c119fcm.jpg" media="screen" />
+</head>
+<body class="responsive" http-equiv="refresh">
+	<div class="bg" http-equiv="refresh">
+		<div id="myCarousel" class="carousel slide" align="middle" http-equiv="refresh">
+			<ol class="carousel-indicators carousel-indicators-1" http-equiv="refresh">
+					<li data-target="#myCarousel" class="active" data-slide-to="0"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+			</ol>
+			
+			<div class="carousel-inner carousel-inner-one" >
+				<div id = "imgforour" class="item active"><img src="https://ae01.alicdn.com/kf/H77bd150e726744c08f21374dbfe54d2ba.jpg" alt="one" width="42%"></div>
+				<div id = "imgforour" class="item"><img src="https://ae01.alicdn.com/kf/H9b2be6a4b7e648229cd9043c234c2a749.jpg" alt="two" width="75.4%"></div>
+				<div id = "imgforour" class="item"><img src="https://ae01.alicdn.com/kf/H6919754580b2460c991af7adc944873cu.jpg" alt="three" width="74.7%"></div>
+			</div>
+			
+			<a href="#myCarousel" data-slide="prev" class="carousel-control left"><img style="transform: rotate(180deg);" src="https://ae01.alicdn.com/kf/H1cf5f5a38a9e478fbd681f1df7ad9dd9C.jpg" width="40%" alt="left"></a>
+			<a href="#myCarousel" data-slide="next" class="carousel-control right"><img src="https://ae01.alicdn.com/kf/H1cf5f5a38a9e478fbd681f1df7ad9dd9C.jpg" width="40%" alt="left"></a>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+	$('#myCarousel').carousel({
+		interval:3000,
+	});
+// 做垂直居中的
+	$('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
+	$(window).resize(function () {
+		var $height = $('.carousel-inner img').eq(0).height() || 
+					  $('.carousel-inner img').eq(1).height() || 
+					  $('.carousel-inner img').eq(2).height();
+		$('.carousel-control').css('line-height', $height + 'px');
+	});
+	function _active(e){
+		$(e).parent().children().removeClass("active");
+		$(e).addClass("active");
+		$(e).parent().find('.active span').css('display','none');
+		var $target = '#'+$(e).attr("data-target");
+		// console.log($($target).css('display','table'));
+		$(".container-fluid").removeClass('show');
+		$(".container-fluid").addClass('hidden');
+		$($target).removeClass('hidden');
+		$($target).addClass('show');
+	}
+</script>
+</html>
