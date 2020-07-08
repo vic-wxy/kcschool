@@ -1,9 +1,105 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="utf-8">
-		<title></title>
-	</head>
-	<body>
-	</body>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>毕业</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+	<link rel="stylesheet" href="../css/first.css">
+	<link rel="shortcut icon" type="image/x-icon" href="https://ae01.alicdn.com/kf/H432338a55b6043909b2fd1cc85c119fcm.jpg" media="screen" />
+</head>
+<body class="responsive" http-equiv="refresh">
+	<div class="bg" http-equiv="refresh">
+		<div id="myCarousel" class="carousel slide" align="middle" http-equiv="refresh">
+			<ol class="carousel-indicators carousel-indicators-1" http-equiv="refresh">
+					<li data-target="#myCarousel" class="active" data-slide-to="0"></li>
+					<li data-target="#myCarousel" data-slide-to="1"></li>
+					<li data-target="#myCarousel" data-slide-to="2"></li>
+					<li data-target="#myCarousel" data-slide-to="3"></li>
+					<li data-target="#myCarousel" data-slide-to="4"></li>
+					<li data-target="#myCarousel" data-slide-to="5"></li>
+					<li data-target="#myCarousel" data-slide-to="6"></li>
+					<li data-target="#myCarousel" data-slide-to="7"></li>
+					<li data-target="#myCarousel" data-slide-to="8"></li>
+					<li data-target="#myCarousel" data-slide-to="9"></li>
+					<li data-target="#myCarousel" data-slide-to="10"></li>
+					<li data-target="#myCarousel" data-slide-to="11"></li>
+					<li data-target="#myCarousel" data-slide-to="12"></li>
+					<li data-target="#myCarousel" data-slide-to="13"></li>
+					<li data-target="#myCarousel" data-slide-to="14"></li>
+					<li data-target="#myCarousel" data-slide-to="15"></li>
+					<li data-target="#myCarousel" data-slide-to="16"></li>
+					<li data-target="#myCarousel" data-slide-to="17"></li>
+					<li data-target="#myCarousel" data-slide-to="18"></li>
+					<li data-target="#myCarousel" data-slide-to="19"></li>
+					<li data-target="#myCarousel" data-slide-to="20"></li>
+					<li data-target="#myCarousel" data-slide-to="21"></li>
+					<li data-target="#myCarousel" data-slide-to="22"></li>
+					<li data-target="#myCarousel" data-slide-to="23"></li>
+					<li data-target="#myCarousel" data-slide-to="24"></li>
+					<li data-target="#myCarousel" data-slide-to="25"></li>
+					<li data-target="#myCarousel" data-slide-to="26"></li>
+					<li data-target="#myCarousel" data-slide-to="27"></li>
+					<li data-target="#myCarousel" data-slide-to="28"></li>
+					<li data-target="#myCarousel" data-slide-to="29"></li>
+					<li data-target="#myCarousel" data-slide-to="30"></li>
+					<li data-target="#myCarousel" data-slide-to="31"></li>
+			</ol>
+			
+			<div class="carousel-inner carousel-inner-one" >
+				<div id = "imgforour" class="item active"><img src="https://i.loli.net/2020/07/08/aD2gbSvusG3jKYL.jpg" alt="one" width="100%"></div>
+				<div id = "imgforour" class="item"><img src="https://i.loli.net/2020/07/08/u5BoXKRjC68LJQd.jpg" alt="two" width="42.1%"></div>
+				<div id = "imgforour" class="item"><img src="https://i.loli.net/2020/07/08/FKYLIEVMXoO9gbP.jpg" alt="three" width="75%"></div>
+				<div id = "imgforour" class="item"><img src="https://i.loli.net/2020/07/08/tOhRQ6PZdpv8Eul.jpg" alt="four" width="75%"></div>
+				<div id = "imgforour" class="item"><img src="https://i.loli.net/2020/07/08/s6QO2mJNIDbBud4.jpg" alt="five" width="75%"></div>
+				<div id = "imgforour" class="item"><img src="https://i.loli.net/2020/07/08/om7VYA6kOw8X9eQ.jpg" alt="six" width="42%"></div>
+				<div id = "imgforour" class="item"><img src="https://i.loli.net/2020/07/08/HcsptxoK93PheXF.jpg" alt="seven" width="74.7%"></div>
+			</div>
+			
+			<a href="#myCarousel" data-slide="prev" class="carousel-control left"><img style="transform: rotate(180deg);" src="https://ae01.alicdn.com/kf/H1cf5f5a38a9e478fbd681f1df7ad9dd9C.jpg" width="40%" alt="left"></a>
+			<a href="#myCarousel" data-slide="next" class="carousel-control right"><img src="https://ae01.alicdn.com/kf/H1cf5f5a38a9e478fbd681f1df7ad9dd9C.jpg" width="40%" alt="left"></a>
+		</div>
+	</div>
+</body>
+<script src="../js/jquery-3.1.1.min.js"></script>
+<script src="../js/bootstrap.min.js"></script>
+<script>
+	$('#myCarousel').carousel({
+		interval:3000,
+	});
+// 做垂直居中的
+	$('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
+	$(window).resize(function () {
+		var $height = $('.carousel-inner img').eq(0).height() || 
+					  $('.carousel-inner img').eq(1).height() || 
+					  $('.carousel-inner img').eq(2).height();
+		$('.carousel-control').css('line-height', $height + 'px');
+	});
+	function _active(e){
+		$(e).parent().children().removeClass("active");
+		$(e).addClass("active");
+		$(e).parent().find('.active span').css('display','none');
+		var $target = '#'+$(e).attr("data-target");
+		// console.log($($target).css('display','table'));
+		$(".container-fluid").removeClass('show');
+		$(".container-fluid").addClass('hidden');
+		$($target).removeClass('hidden');
+		$($target).addClass('show');
+	}
+	function getitiss(){
+		if(screen.height > screen.width){
+			return 1;
+		}
+		return 0;
+	}
+	function gourl(){
+		window.location.href="https://vic-wxy.github.io/kcschool/html/bxhploading.html"
+	}
+	function ybyygoto(){
+		if(getitiss()){
+			gourl();
+		}
+	}
+	setInterval("ybyygoto()",1000);
+</script>
 </html>
