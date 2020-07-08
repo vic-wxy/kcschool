@@ -45,8 +45,8 @@
 		</div>
 	</nav>
 <!-- 响应式轮播图 -->
-	<div id="myCarousel" class="carousel slide">
-		<ol class="carousel-indicators carousel-indicators-1">
+	<div id="myCarousel" class="carousel slide" http-equiv="refresh">
+		<ol class="carousel-indicators carousel-indicators-1" http-equiv="refresh">
 			<!-- <span class="carousel-indicators-span"> -->
 				<li data-target="#myCarousel" class="active" data-slide-to="0"></li>
 				<li data-target="#myCarousel" data-slide-to="1"></li>
@@ -57,7 +57,7 @@
 			<!-- </span> -->
 		</ol>
 		
-		<div class="carousel-inner carousel-inner-one">
+		<div class="carousel-inner carousel-inner-one" http-equiv="refresh">
 			<div class="item active"><img src="https://s1.ax1x.com/2020/06/30/NI0ivD.jpg" alt="one" <!--height=50% width=50%-->></div>
 			<div class="item"><img src="https://s1.ax1x.com/2020/06/30/NI0M28.jpg" alt="two" <!--height=50% width=50%-->></div>
 			<div class="item"><img src="https://s1.ax1x.com/2020/06/30/NI0QxS.jpg" alt="three" <!-- height=50% width=50%> --></div>
@@ -86,7 +86,7 @@
 				<div class="col-md-6">
 					<div class="pic-show">
 						<div class="pic-show-picture thumbnail center-block">
-							<a href="#" id = "pic-show-picture-ab"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0ivD.jpg" alt=""></a>
+							<a onclick=gotohttps("http://127.0.0.1:8848/kcschool/html/first.html") id = "pic-show-picture-ab"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0ivD.jpg" alt=""></a>
 						</div>
 						<div class="pic-show-body">
 							<h3 >校园风光</h3>
@@ -99,7 +99,7 @@
 				<div class="col-md-6">
 					<div class="pic-show">
 						<div class="pic-show-picture thumbnail center-block">
-							<a href="#" id = "pic-show-picture-b"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0M28.jpg" alt=""></a>
+							<a onclick=gotohttps("http://127.0.0.1:8848/kcschool/html/second.html") id = "pic-show-picture-b"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0M28.jpg" alt=""></a>
 						</div>
 						<div class="pic-show-body">
 							<h3 >生活日常</h3>
@@ -111,7 +111,7 @@
 				<div class="col-md-6">
 					<div class="pic-show">
 						<div class="pic-show-picture thumbnail center-block">
-							<a href="#" id = "pic-show-picture-c"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0QxS.jpg" alt=""></a>
+							<a onclick=gotohttps("http://127.0.0.1:8848/kcschool/html/third.html") id = "pic-show-picture-c"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0QxS.jpg" alt=""></a>
 						</div>
 						<div class="pic-show-body">
 							<h3 >活动风采</h3>
@@ -123,7 +123,7 @@
 				<div class="col-md-6">
 					<div class="pic-show">
 						<div class="pic-show-picture thumbnail center-block">
-							<a href="#" id = "pic-show-picture-d"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0ZVA.jpg" alt=""></a>
+							<a onclick=gotohttps("http://127.0.0.1:8848/kcschool/html/four.html") id = "pic-show-picture-d"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0ZVA.jpg" alt=""></a>
 						</div>
 						<div class="pic-show-body">
 							<h3 >其他活动</h3>
@@ -220,6 +220,9 @@
 	}
 	function urltoxiang(){
 		location.replace("http://vic-wxy.github.io/kcschool/data/xiang.html")
+	}
+	function gotohttps(https){
+		window.location.href=https;
 	}
 </script>
 </html>
