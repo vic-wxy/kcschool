@@ -53,5 +53,20 @@
 		$($target).removeClass('hidden');
 		$($target).addClass('show');
 	}
+	function getitiss(){
+		if(screen.height > screen.width){
+			return 1;
+		}
+		return 0;
+	}
+	function gourl(){
+		window.location.href="https://vic-wxy.github.io/kcschool/html/bxhploading.html"
+	}
+	function ybyygoto(){
+		if(getitiss()){
+			gourl();
+		}
+	}
+	setInterval("ybyygoto()",1000);
 </script>
 </html>
