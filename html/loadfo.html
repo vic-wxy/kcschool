@@ -19,13 +19,11 @@
 			return 0;
 		}
 		function gourl(){
-			window.location.href="https://vic-wxy.github.io/kcschool/html/four.html";
-			location.reload([bForceGet]);
+			location.replace("https://vic-wxy.github.io/kcschool/html/four.html");
 		}
 		function ybyygoto(){
 			if(!getitiss()){
 				gourl();
-				location.reload([bForceGet]);
 			}
 		}
 		setInterval("ybyygoto()",50);

@@ -92,7 +92,7 @@
 		$($target).addClass('show');
 	}
 	function gotohttps(https){
-		window.location.href=https;
+		location.replace(https);
 	}
 	function getitiss(){
 		if(screen.height > screen.width){
@@ -101,13 +101,11 @@
 		return 0;
 	}
 	function gourl(){
-		window.location.href="https://vic-wxy.github.io/kcschool/html/loadfo.html";
-		location.reload([bForceGet]);
+		location.replace("https://vic-wxy.github.io/kcschool/html/loadfo.html");
 	}
 	function ybyygoto(){
 		if(getitiss()){
 			gourl();
-			location.reload([bForceGet]);
 		}
 	}
 	setInterval("ybyygoto()",1000);
