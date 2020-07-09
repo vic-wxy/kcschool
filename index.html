@@ -8,6 +8,13 @@
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="shortcut icon" type="image/x-icon" href="https://ae01.alicdn.com/kf/H432338a55b6043909b2fd1cc85c119fcm.jpg" media="screen" />
 </head>
+<script>
+	if(is_weixn()){
+		if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+		    gotohttps("https://vic-wxy.github.io/kcschool/html/donotinthewechat_yd/donotinthewechat_yd.html");
+			}
+	}
+</script>
 <body class="responsive">
 	<nav class="navbar navbar-default navbar-fixed-top top-bg">
 		<div class="container">
@@ -219,9 +226,7 @@
 	        return false;
 	    }
 	}
-	if(is_weixn())
-		if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent))
-		    gotohttps("https://vic-wxy.github.io/kcschool/html/donotinthewechat_yd/donotinthewechat_yd.html");
+	
 </script>
 </html>
 <!-- 这里是真正的项目所在地 -->
