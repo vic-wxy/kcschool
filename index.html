@@ -1,232 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>毕业</title>
-	<link rel="stylesheet" href="css/bootstrap.min.css">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-	<link rel="stylesheet" href="css/index.css">
-	<link rel="shortcut icon" type="image/x-icon" href="https://ae01.alicdn.com/kf/H432338a55b6043909b2fd1cc85c119fcm.jpg" media="screen" />
-</head>
-<script>
-	function gotohttps(https){
-		window.location.href=https;
-	}
-	function is_weixn(){
-	    var ua = navigator.userAgent.toLowerCase();
-	    if(ua.match(/MicroMessenger/i)=="micromessenger") {
-	        return true;
-	    } else {
-	        return false;
-	    }
-	}
-	if(is_weixn()){
-		if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
-		    gotohttps("https://vic-wxy.github.io/kcschool/html/donotinthewechat_yd/donotinthewechat_yd.html");
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+	</head>
+	<body>
+	</body>
+	<script>
+		function gotohttps(https){
+			window.location.href=https;
 		}
-</script>
-<body class="responsive">
-	<nav class="navbar navbar-default navbar-fixed-top top-bg">
-		<div class="container">
-			<div class="navbar-header">
-				<a href="" class="navbar-brand navbar-brand-1" ><img src="https://s1.ax1x.com/2020/06/30/NI0m5t.png"  style="height: 35px;" alt=""></a>
-				<span class="icon-bar"></span>
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse" ria-expanded="false">
-					<span class="icon-bar "></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-			<div class="collapse navbar-collapse" id="navbar-collapse">
-				<ul class="nav navbar-nav navbar-right">
-					<li class="dropdown">
-						<a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-picture"></span> 照片墙<span class="caret" style="margin-left: 5px;"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#pic-show-picture-a" onclick=hideforc()>校园风光&nbsp; ></a></li>
-							<li><a href="#pic-show-picture-ab" onclick=hideforc()>生活日常&nbsp; ></a></li>
-							<li><a href="#pic-show-picture-b" onclick=hideforc()>活动照片&nbsp; ></a></li>
-							<li><a href="#pic-show-picture-c" onclick=hideforc()>其他&nbsp; ></a></li>
-						</ul>
-					</li>
-						<li class="dropdown">
-						<a href="" data-toggle="dropdown"><span class="glyphicon glyphicon-education"></span> 毕业纪念册<span class="caret" style="margin-left: 5px;"></span></a>
-						<ul class="dropdown-menu">
-							<li><a href="#banjijiniance" onclick=hideforc()>班级纪念册&nbsp; ></a></li>
-							<li><a href="#gerenjinance" onclick=hideforc()>个人纪念册&nbsp; ></a></li>
-						</ul>
-					</li>
-					</ul>
-			</div>
-		</div>
-	</nav>
-	<div id="myCarousel" class="carousel slide" http-equiv="refresh">
-		<ol class="carousel-indicators carousel-indicators-1" http-equiv="refresh">
-				<li data-target="#myCarousel" class="active" data-slide-to="0"></li>
-				<li data-target="#myCarousel" data-slide-to="1"></li>
-				<li data-target="#myCarousel" data-slide-to="2"></li>
-				<li data-target="#myCarousel" data-slide-to="3"></li>
-				<li data-target="#myCarousel" data-slide-to="4"></li>
-				<li data-target="#myCarousel" data-slide-to="5"></li>
-		</ol>
-		
-		<div class="carousel-inner carousel-inner-one" http-equiv="refresh">
-			<div class="item active"><img src="https://s1.ax1x.com/2020/06/30/NI0ivD.jpg" alt="one" ></div>
-			<div class="item"><img src="https://s1.ax1x.com/2020/06/30/NI0M28.jpg" alt="two" ></div>
-			<div class="item"><img src="https://s1.ax1x.com/2020/06/30/NI0QxS.jpg" alt="three"> </div>
-			<div class="item"><img src="https://s1.ax1x.com/2020/06/30/NI0kKe.jpg" alt="fore" ></div>
-			<div class="item"><img src="https://s1.ax1x.com/2020/06/30/NI0ADH.jpg" alt="five" ></div>
-			<div class="item"><img src="https://s1.ax1x.com/2020/06/30/NI0ZVA.jpg" alt="six" ></div>
-		</div>
-		
-		<a href="#myCarousel" data-slide="prev" class="carousel-control left"><img style="transform: rotate(180deg);" src="https://ae01.alicdn.com/kf/H1cf5f5a38a9e478fbd681f1df7ad9dd9C.jpg" width="40%" alt="left"></a>
-		<a href="#myCarousel" data-slide="next" class="carousel-control right"><img src="https://ae01.alicdn.com/kf/H1cf5f5a38a9e478fbd681f1df7ad9dd9C.jpg" width="40%" alt="left"></a>
-	</div>
-
-	<div class="ZhaoPianQiangJianJie zhpq" >
-		<div class="container">
-			<h2 class="text-center text-info zhpq-h2" id = "pic-show-picture-a">[时光留影——照片墙]</h2>
-			<p class="text-center text-muted  zhpq-p" >在那满是光辉的校园里，你我曾不期而遇</p>
-			<div class="row">
-				<div class="col-md-6">
-					<div class="pic-show">
-						<div class="pic-show-picture thumbnail center-block">
-							<a onclick=gotohttps("http://vic-wxy.github.io/kcschool/html/first.html") id = "pic-show-picture-ab"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0ivD.jpg" alt=""></a>
-						</div>
-						<div class="pic-show-body">
-							<h3 >校园风光</h3>
-							<p class="text-muted">角落红花尽，初冬无觅处。满园青草绿，不减旧时姿。脸颊微风掠，虽轻带寒意。书生耳畔来，习艺伴寒暑。</p>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				
-				<div class="col-md-6">
-					<div class="pic-show">
-						<div class="pic-show-picture thumbnail center-block">
-							<a onclick=gotohttps("http://vic-wxy.github.io/kcschool/html/second.html") id = "pic-show-picture-b"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0M28.jpg" alt=""></a>
-						</div>
-						<div class="pic-show-body">
-							<h3 >生活日常</h3>
-							<p class="text-muted">校园前行的路上，生活日常的欢乐，实验室里的汗水，一点一滴的记录，一步一步的成长</p>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-md-6">
-					<div class="pic-show">
-						<div class="pic-show-picture thumbnail center-block">
-							<a onclick=gotohttps("http://vic-wxy.github.io/kcschool/html/third.html") id = "pic-show-picture-c"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0QxS.jpg" alt=""></a>
-						</div>
-						<div class="pic-show-body">
-							<h3 >活动风采</h3>
-							<p class="text-muted">运动场上的竞技，篮球场上的角逐，户外拓展的游乐，班级晚会的游戏，一幕幕，一页页，满满全是记忆</p>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-				<div class="col-md-6">
-					<div class="pic-show">
-						<div class="pic-show-picture thumbnail center-block">
-							<a onclick=gotohttps("http://vic-wxy.github.io/kcschool/html/four.html") id = "pic-show-picture-d"><img class=" img-rounded img-responsive" src="https://s1.ax1x.com/2020/06/30/NI0ZVA.jpg" alt=""></a>
-						</div>
-						<div class="pic-show-body">
-							<h3 >其他活动</h3>
-							<p class="text-muted">三年级|集体十岁生日</p>
-							<p class="text-muted">义卖活动</p>
-							<p class="text-muted">运动会</p>
-							<p9 class="text-muted">·····</p9>
-						</div>
-					</div>
-					<div class="clearfix"></div>
-				</div>
-			</div>
-		</div>
-	</div>
-<!-- 这里是毕业纪念册部分 -->
-	<div class="jiniance">
-		<div class="container">
-			<div class="row">
-				<div class="col-md-6 col-xs-6">
-					<div class="thumbnail center-block lastblock">
-						<img src="https://s1.ax1x.com/2020/06/30/NI0eUI.png" alt="">
-						<div class="caption">
-							<h3>班级纪念册</h3>
-							<p>所有美丽的相遇是首诗，所有挥手的别离是从诗里飘选的歌，在风里，在云里，浅唱在年华的角落里。夕阳篱花前的那一声珍重，所有相聚的记忆凝结成了最后的容颜。</p>
-							<a target="_blank" onclick=urltobi() id="banjijiniance"><div type="button" class="btn btn-info btn-lg">进入纪念册</div></a>
-							<p></p>
-							<a type = "button" href="https://tdattachment-30214.sz.gfp.tencent-cloud.com/1593591169755/3ee586e6f9fe6ec6b770a7a6fe640bfa.pdf?response-content-disposition=attachment%3bfilename%3dbi.pdf%3bfilename%2a%3dutf-8%27%27bi.pdf&sign=q-sign-algorithm%3Dsha1%26q-ak%3DW84T9R0NKiYsdLJJlOyMEEOU%26q-sign-time%3D1593591205%3B1593677605%26q-key-time%3D1593591205%3B1593677605%26q-header-list%3Dhost%26q-url-param-list%3Dresponse-content-disposition%26q-signature%3Db610b1e4cde543bdf68b64aae4a7e97e3aba556f" download="bi.pdf">点击下载</a>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6 col-xs-6">
-					<div class="thumbnail center-block lastblock">
-						<img src="https://s1.ax1x.com/2020/06/30/NI0Ebd.png" alt="">
-						<div class="caption">
-							<h3>个人纪念册</h3>
-							<p>所有美丽的相遇是首诗，所有挥手的别离是从诗里飘选的歌，在风里，在云里，浅唱在年华的角落里。夕阳篱花前的那一声珍重，所有相聚的记忆凝结成了最后的容颜。</p>
-							<a href="#" id="gerenjinance"><div type="button" onclick=urltoxiang() class="btn btn-info btn-lg">进入纪念册</div></a>
-							<p></p>
-							<footer id="footerred">
-								<p>(注意：在线预览会很慢且卡 建议下载)</p>
-							</footer>
-							<a type = "button" href="http://upos-sz-mirrorcos.bilivideo.com/upgcxcode/21/07/207850721/207850721-1-192.mp4?e=ig8euxZM2rNcNbNjhwdVhwdlhbTVhwdVhoNvNC8BqJIzNbfq9rVEuxTEnE8L5F6VnEsSTx0vkX8fqJeYTj_lta53NCM=&uipk=5&nbs=1&deadline=1593621374&gen=playurl&os=cosbv&oi=1866714693&trid=cc1fb0e41fb34407aede3c7c8a6137bbT&platform=html5&upsig=27c2df669dd5130307d6bdcdd8043b4f&uparams=e,uipk,nbs,deadline,gen,os,oi,trid,platform&mid=0&orderid=0,1&logo=80000000?t=app.bilibili.com" download="xiang.mp4">点击下载</a>
-						</div>
-					</div>
-				</div>
-			</div>			
-		</div>
-	</div>
-	<!-- <div class="footer">this is footer</div> -->
-	<footer id="footer">
-		<div class="container">
-			<p>康城学校|小学部|五(9)班| <br class="hidden-md hidden-lg ">2020届五(9)毕业班</p>
-			<p>《毕业纪念册》 2020.6.28</p>
-			<p>制站者：王新语</p>
-			<p>本站使用亚马逊服务器(github)</p>
-			<p><a href="https://github.com/vic-wxy/kcschcool">本站开源(开放源代码) 开源地址：github.com/vic-wxy/kcschool  (点我进入)</a></p>
-		</div>
-	</footer>
-
-</body>
-<script src="js/jquery-3.1.1.min.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script>
-// 自动播放
-	$('#myCarousel').carousel({
-		interval:3000,
-	});
-// 做垂直居中的
-	$('.carousel-control').css('line-height', $('.carousel-inner img').height() + 'px');
-	$(window).resize(function () {
-		var $height = $('.carousel-inner img').eq(0).height() || 
-					  $('.carousel-inner img').eq(1).height() || 
-					  $('.carousel-inner img').eq(2).height();
-		$('.carousel-control').css('line-height', $height + 'px');
-	});
-	function _active(e){
-		$(e).parent().children().removeClass("active");
-		$(e).addClass("active");
-		$(e).parent().find('.active span').css('display','none');
-		var $target = '#'+$(e).attr("data-target");
-		// console.log($($target).css('display','table'));
-		$(".container-fluid").removeClass('show');
-		$(".container-fluid").addClass('hidden');
-		$($target).removeClass('hidden');
-		$($target).addClass('show');
-	}
-//按钮自动隐藏
-    function hideforc(){
-		document.getElementById('navbar-collapse').className='collapse navbar-collapse';
-	}
-//网页跳转
-    function urltobi(){
-		location.replace("https://book.yunzhan365.com/gzwa/ghpt/mobile/index.html")
-	}
-	function urltoxiang(){
-		location.replace("http://vic-wxy.github.io/kcschool/data/xiang.html")
-	}
-	
-	
-</script>
+		function is_weixn(){
+		    var ua = navigator.userAgent.toLowerCase();
+		    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		        return true;
+		    } else {
+		        return false;
+		    }
+		}
+		if(is_weixn()){
+			if(/Android|webOS|iPhone|iPod|BlackBerry/i.test(navigator.userAgent)){
+			    gotohttps("https://vic-wxy.github.io/kcschool/index1.html");
+			}
+		}
+	</script>
 </html>
-<!-- 这里是真正的项目所在地 -->
