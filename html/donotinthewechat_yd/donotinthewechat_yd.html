@@ -4,6 +4,22 @@
 		<meta charset="utf-8">
 		<title></title>
 	</head>
+	<script>
+		function gotohttps(https){
+			window.location.href=https;
+		}
+		function is_weixn(){
+		    var ua = navigator.userAgent.toLowerCase();
+		    if(ua.match(/MicroMessenger/i)=="micromessenger") {
+		        return true;
+		    } else {
+		        return false;
+		    }
+		}
+		if(!is_weixn()){
+			gotohttps("https://vic-wxy.github.io/kcschool");
+		}
+	</script>
 	<style>
 		#learn{
 			color: skyblue;
@@ -42,20 +58,4 @@
 		</div>
 		
 	</body>
-	<script>
-		function gotohttps(https){
-			window.location.href=https;
-		}
-		function is_weixn(){
-		    var ua = navigator.userAgent.toLowerCase();
-		    if(ua.match(/MicroMessenger/i)=="micromessenger") {
-		        return true;
-		    } else {
-		        return false;
-		    }
-		}
-		if(!is_weixn()){
-			gotohttps("https://vic-wxy.github.io/kcschool");
-		}
-	</script>
 </html>
